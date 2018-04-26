@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
       <div *ngSwitchCase="'red'"> you picked red color</div>
       <div *ngSwitchCase="'blue'">you picked blue color</div>
       <div *ngSwitchCase="'black'">you picked black color</div>
+      <div *ngSwitchDefault>Pick again</div>
     </div>
   `,
   styles: [``]
@@ -14,7 +15,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class TesteComponent implements OnInit {
 
-  public color = "red";
+  public color = "orange";
 
   constructor() { }
 
