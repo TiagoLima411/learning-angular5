@@ -3,8 +3,21 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-teste',
   template: `
-    <input [(ngModel)]="name" type="text">
-    {{name}}
+    <h2 *ngIf="display; then thenBlock; else elseBlock">
+      Code Evolution
+    </h2>
+
+    <ng-template #thenBlock>
+      <h2>
+        Code evolution
+      </h2>
+    </ng-template>
+
+    <ng-template #elseBlock>
+      <h2>
+        Name is hidden
+      </h2>
+    </ng-template>
   `,
   styles: [`
 
@@ -12,10 +25,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TesteComponent implements OnInit {
 
-  public name = "";
+  display = true;
 
   constructor() { }
 
   ngOnInit() {
   }
+
 }
