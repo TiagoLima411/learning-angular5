@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Tour of Angular';
+  public name = "Tiago";
+  public message = "";//variable that receive event from child
 }
