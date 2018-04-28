@@ -1,8 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align: center">
   <h1>Wellcome to {{title}}</h1>
-  <h1>{{message}}</h1>
 </div>
-<!-- include parentData propert inside the tag to send child-->
-<!-- include childEvent propert inside the tag to receive child data-->
-<app-teste (childEvent)="message=$event" [parentData]="name"></app-teste>
+<app-employee-list></app-employee-list>
+<app-employee-detail></app-employee-detail>
